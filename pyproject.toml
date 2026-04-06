@@ -3,8 +3,9 @@ name = "bleuio-fw-updater"
 version = "1.0.0"
 description = "BleuIO firmware updater tool"
 readme = "README.md"
-requires-python = ">=3.5"
+requires-python = ">=3.9"
 dependencies = [
+    "pyqt6>=6.10.2",
     "pyserial==3.5",
 ]
 
@@ -18,5 +19,5 @@ bleuio-fw-updater = "bleuio_fw_updater:main"
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
-[tool.uv]
-dev-dependencies = []
+[dependency-groups]
+dev = []

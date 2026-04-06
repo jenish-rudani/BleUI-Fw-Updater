@@ -2,6 +2,19 @@
 
 A command-line tool for updating BleuIO firmware images.
 
+## Quick Start Commands
+
+```bash
+# 1. Install dependencies
+uv sync
+
+# 2. Run the modern Desktop GUI
+uv run python gui.py
+
+# 3. (Alternative) Run the CLI Updater directly
+uv run python bleuio_fw_updater.py <firmware.img>
+```
+
 ## Requirements
 
 - Python >= 3.5
