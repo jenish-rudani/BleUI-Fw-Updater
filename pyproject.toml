@@ -1,0 +1,22 @@
+[project]
+name = "bleuio-fw-updater"
+version = "1.0.0"
+description = "BleuIO firmware updater tool"
+readme = "README.md"
+requires-python = ">=3.5"
+dependencies = [
+    "pyserial==3.5",
+]
+
+[[project.authors]]
+name = "BleuIO"
+
+[project.scripts]
+bleuio-fw-updater = "bleuio_fw_updater:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = []
